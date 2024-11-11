@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* internal styles */
+        .small-img-grp {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+
+        .sproduct select {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .sproduct input {
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .sproduct input:focus {
+            outline: none;
+        }
+
+        .buy-btn {
+            background-color: #fb774b;
+            opacity: 1;
+            transition: 0.3s all;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        var MainImg = document.getElementById(MainImg);
+        var smallimg = document.getElementsByClassName('small-img');
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+        
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+            <img src="images/watches/logo1.png" alt="logo1">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="" Toggle navigation>
+                <span><i id="bar" class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fal fa-search"></i>
+                        <i class="fal fa-shopping-bag"></i>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1 " src="images/shop/1.jpg" id="MainImg">
+                <div class="small-img-grp">
+                    <div class="small-img-col">
+                        <img src="images/shop/1.jpg" id="small-img" width="100%" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/shop/24.jpg"id="small-img" width="100%" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/shop/25.jpg" id="small-img" width="100%" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/shop/26.jpg" id="small-img" width="100%" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6  col-md-12 col-12">
+                <h6>Home /T-shirt</h6>
+                <h3 class="py-4">Men's Fashion T shirt</h3>
+                <h2>$139.48</h2>
+                <select class="my-3">
+                    <option value="">Select Size</option>
+                    <option value="">XXL</option>
+                    <option value="">XL</option>
+                    <option value="">L</option>
+                    <option value="">M</option>
+                    <option value="">S</option>
+                    <input type="number " name="1">
+                    <button class="buy-btn">Add To Cart</button>
+                    <h4 class="mt-5 mb-5">Product Details</h4>
+                    <Span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae tempore consequuntur,
+                        dignissimos nemo cupiditate neque beatae nobis aspernatur. Perspiciatis alias mollitia
+                        dignissimos aperiam deleniti iure, illum totam neque dolor distinctio delectus cumque,
+                        recusandae vitae! Similique repudiandae sit praesentium voluptatem harum animi. Commodi officia
+                        animi nihil voluptatibus alias enim quidem dolorem!</Span>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5 py-5" id="featured">
+        <div class="container text-center mt-5 py-5">
+            <h3>Related products</h3>
+            <hr class="mx-auto">
+            <!-- <p>Lorem ipsum, Et maiores reprehenderit quidem unde architecto recusandae laborum? Laboriosam, quae.</p> -->
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img src="images/featured/1.jpg" class="img-fluid mb-3" alt="">
+                <div class="star">
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                </div>
+                <h5 class="p-name">Sprot Boots</h5>
+                <h4 class="p-price">$16.12</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img src="images/featured/2.jpg" class="img-fluid mb-3" alt="">
+                <div class="star">
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                </div>
+                <h5 class="p-name">Sprot Boots</h5>
+                <h4 class="p-price">$16.12</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img src="images/featured/3.jpg" class="img-fluid mb-3" alt="">
+                <div class="star">
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                </div>
+                <h5 class="p-name">Sprot Boots</h5>
+                <h4 class="p-price">$16.12</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img src="images/featured/4.jpg" class="img-fluid mb-3" alt="">
+                <div class="star">
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                    <i class="fasfa-star"></i>
+                </div>
+                <h5 class="p-name">Sprot Boots</h5>
+                <h4 class="p-price">$16.12</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="images/watches/logo2.png" alt="">
+                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex accusantium odit labore
+                    reprehenderit, voluptates nisi dolorum. Nostrum odit, assumenda optio necessitatibus esse sunt nisi.
+                </p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">boys</a></li>
+                    <li><a href="#">girls</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">clothes</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 STREET NAME ,CITY, INDIA</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>123-789654</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>abc@gmail.com</p>
+                </div>
+
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img src="images/insta/1.jpg" alt="" class="img-fluid h-100 m-2">
+                    <img src="images/insta/2.jpg" alt="" class="img-fluid h-100 m-2">
+                    <img src="images/insta/3.jpg" alt="" class="img-fluid h-100 m-2">
+                    <img src="images/insta/4.jpg" alt="" class="img-fluid h-100 m-2">
+                    <img src="images/insta/5.jpg" alt="" class="img-fluid h-100 m-2">
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>rymo eCommerce &copy; 2024. All Rights Reserved </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
